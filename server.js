@@ -11,6 +11,10 @@ const { S3Client, ListObjectsV2Command, PutObjectCommand, GetObjectCommand, Dele
     fs = require('fs'),
     fileUpload = require('express-fileupload');
 
+const cors = require('cors');
+
+app.use(cors());
+
 
 /////////////
 //
